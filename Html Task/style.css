@@ -3,6 +3,53 @@
     justify-content: center;
     align-content: center;
 }   
+.input_div{
+    padding: 0 16px;
+    border-radius: 2px 0 0 2px;
+    outline: none;
+    border: none;
+    height: 38px;
+    width: 450px;
+    margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-size: 15px;
+    position: relative;
+    margin-top: 8px;
+    outline: none;
+    transition: 0.5s ease-in-out;
+    
+}
+.btn-Search{
+    height: 38px;
+    width: 38px;
+    color: #2874f0;
+    border: none;
+    cursor: pointer;
+    outline: 0 !important;
+    position: absolute;
+    margin-top: 8px;
+    font-size: 18px;
+    align-items: center;
+    z-index: 10;
+}
+
+
+
+.nav-btn{
+    padding: 10px;
+}
+.btn_login{
+    margin-left: 50px;
+}
+.btn_nav{
+    margin-top: 15px;
+    padding: auto;
+    position: relative;
+    padding: 0px 50px;
+    font-weight: bold;
+
+    outline: 0 !important;
+}
 input{
     margin-left: 10px;
     width: 30%;
@@ -14,16 +61,16 @@ input[type="text"]{
     color: black;
     border: none;
 }
-button{
-    width: 7%;
-    margin-left: 0px;
-}
+
+
+
+
+
 .Search{
     outline: none;  
     background-color: #fff;
     color: #fff;
-    width: 30px;
-    padding: 1.75rem 1px;
+    width: 30px;    
     cursor: pointer;
     margin-right: 7%;
 }
@@ -39,6 +86,8 @@ button{
     font-weight: bolder;
     font-size: small;
 }
+
+
 
 .prod{
     margin-bottom: 10px;
@@ -63,12 +112,73 @@ button{
     align-content: center;
 
 }
-.prod_img{
-    padding: 0 10px;
-}
 h4{
     font-weight: bolder;
 }
 h5{
     color: rgb(43, 145, 43);
+}
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 13px 8px;
+    width: 200px;
+    border-bottom: 1px solid rgb(235, 232, 232);
+    font-size: small;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ .prod_div{
+     display: flex;
+     justify-content: center;
+     align-content: center;
+ }
+
+
+ /* .offer_div{
+    justify-content: space-between;
+ } */
+ .adver_div{
+     position: absolute;
+
+ }
+
+
+ /* .adver_div{
+    height: 250px;
+    width: 150px;
+    display: flex;
+    margin-left:87%;
+    position: absolute;
+ } */
+ .prod_img{
+    padding: 10px;
+    margin: 0 30px;
+ }
+
+
+ .com-row{
+ display: flex;
+ justify-content: space-around;
+ width: 100%;
+ max-height: 366px;
+ margin: 10px 0px;
 }

@@ -23,19 +23,33 @@
 </head>
 
 <body>
-    <div class="main_div bg-light">
-        <header>
-            <div class="nav-div p-3 mb-2 bg-primary text-white">
-               
-                    <img src="Flipkart.jpg" height="3%" width="5%"  alt="Some Error Occur. so, Image is not Found !!">
-                    <input type="text" placeholder="Search for products, brands and more">
-                    <i class="fa fa-search Search text-primary"></i>
-                    <button class="btn btn-light" style="font-size: large;"> Login </button>
-                    <button class="btn btn-primary" style="font-size: large;"> More</button>
-                    <button class="btn btn-primary" style="font-size: large;"> <i class="fa fa-shopping-cart"></i> Cart
-                    </button>
+    <div class="bg-light">
+        <nav>
+            <div class="nav-div p-2 mb-2 bg-primary text-white ">
+                <img src="Flipkart.jpg" height="2%" width="5%" class="position-relative "
+                    alt="Some Error Occur. so, Image is not Found !!">
 
-            </div>
+                <input type="text" class="input_div" placeholder="Search for products, brands and more">
+                <button class="btn-Search bg-white cou"><i class="fa fa-search text-primary"></i> </button>
+
+                <div>
+                    <button class="btn btn-light btn_nav btn_login text-primary" style="font-size:medium;"> Login
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-primary btn_nav" style="font-size: medium;"> More <i
+                            class="fa fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                            <a href="#"> <i class="fa fa-bell text-primary"></i> Notification Prefences</a>
+                            <a href="#"> <i class="fa fa-briefcase text-primary"></i> Cell on Flipkart</a>
+                            <a href="#"> <i class="fa fa-comment-dots text-primary"></i> 24 * 7 Custeromer Care</a>
+                            <a href="#"> <i class="fa fa-chart-line text-primary" ></i> Advertise</a>
+                            <a href="#"> <i class="fa fa-download text-primary"></i> Download App</a>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn_nav" style="font-size: medium;"> <i
+                            class="fa fa-shopping-cart"></i> Cart </button>
+                </div>
+        </nav>
         </header>
 
 
@@ -79,139 +93,125 @@
 
 
 
-
-        <div class="container bg-white mb-3">
+        <div class="prod_div col-12 row">
+        <div class="container-fluid col-10 bg-white mb-4">
+            <div class="bg-white " style="justify-content: space-between;">
+                <div class="float-right ml-5 mt-3">
+                    <img src="image/offer.jpg" height="280" width="auto" alt="">
+                </div>
+            </div>
             <div class="product-box">
                 <span class="product_Desc"> Deals of the Day </span> <span class="product_time"> <img
-                        src="image/stopwatch.png" height="25px" width="25px" alt="" /> 22:07:36 left </span>
-                <button class="btn btn-primary float-right" style="font-size: large;"> View </button>
-                <hr>
-            </div>
-            <div>
-            <table class="text-center prod_list">
-                <tr class="img_S">
-                    <td>
-                        <img src="Product/Casio.webp" height="100" width="auto" class="prod_img"> 
-                    </td>
-                    <td>
-                         <img src="Product/Temple.webp" height="100" width="auto" class="prod_img"> 
-                    </td>
-                    <td>
-                        <img src="Product/Tablet_cases.webp" height="100" width="auto" class="prod_img">
-                    </td>
-                    <td>
-                        <img src="Product/Home_Decor.webp" height="100" width="auto" class="prod_img">
-                    </td>
-                    <td>
-                        <img src="Product/Lava.webp" height="100" width="auto" class="prod_img">
-                    </td>
-                </tr>
+                        src="image/stopwatch.png" height="20px" width="20px" alt="" /> 22:07:36 left </span>
+                <button class="btn btn-primary float-right p-3" style="font-size: small;"> VIEW ALL </button>
 
-                <tr>
-                    <td>                         
+            </div>
+            <hr class="mt-5">
+            <div>
+                <div class="text-center row">
+                    <div class="deals_div">
+                        <img src="Product/Casio.jpg" height="150" width="auto" class="prod_img">
                         <h4>Casio</h4>
                         <h5> Upto 70%+Extra 10% off</h5>
                         <p> Knockout Deals! </p>
-                     </td>
-                    <td> 
+                    </div>
+
+                    <div class="deals_div">
+                        <img src="Product/Temple.png" height="150" width="auto"  class="prod_img">
                         <h4>Home Temple & more</h4>
                         <h5> Extra 10% off</h5>
                         <p> Space Saving funiture </p>
-                    </td>
-                    <td>         
+                    </div>
+                    <div class="deals_div">
+                        <img src="Product/Tablet_cases.jpg" height="150" width="auto" class="prod_img">
                         <h4>Premiume Tablet Cases</h4>
                         <h5> Extra 10% off</h5>
                         <p> For All Top Models </p>
-                    </td>
-                    <td>    
+                    </div>
+                    <div class="deals_div">
+                        <img src="Product/Home_Decor.jpg" height="150" width="auto" class="prod_img">
                         <h4>Best of Home Decor</h4>
                         <h5> from ₹79</h5>
-                        <p> Lowest Price Ever</p> 
-                    </td>
-                    <td>            
+                        <p> Lowest Price Ever</p>
+                    </div>
+                    <div class="deals_div">
+                        <img src="Product/girl-tshirt.jpg" height="150" width="auto" class="prod_img">
+                        <h4>Metronaut, Provologe & ...</h4>
+                        <h5> From ₹249+Extra 10%off</h5>
+                        <p> Now ₹999</p>
+                    </div>
+                    <div class="deals_div">
+                        <img src="Product/Lava.jpg" height="150" width="auto" class="prod_img">
                         <h4>Lava A1500</h4>
                         <h5> Flat ₹830 off</h5>
-                        <p> Now ₹999</p> 
-                    </td>
-                </tr>
-            </table>
-        </div>
-        </div>
-
-
-        <div class="container bg-white mb-3">
-            <div class="product-box">
-                <span class="product_Desc"> Books or Music Instruments</span> 
-                <h6 class="text-secondary "> Shop now !</h6>
-                <button class="btn btn-primary float-right" style="font-size: large;"> View </button>
-                <hr>
+                        <p> Now ₹999</p>
+                    </div>
+                     <div class="deals_div">
+                        <img src="Product/Lava.jpg" height="150" width="auto" class="prod_img">
+                        <h4>Lava A1500</h4>
+                        <h5> Flat ₹830 off</h5>
+                        <p> Now ₹999</p>
+                    </div>
+      
+                </div>
             </div>
-            <div>
-            <table class="text-center">
-                <tr class="img_S">
-                    <td>
-                        <img src="Product/Casio.webp" height="100" width="auto" class="prod_img"> 
-                    </td>
-                    <td>
-                         <img src="Product/Temple.webp" height="100" width="auto" class="prod_img"> 
-                    </td>
-                    <td>
-                        <img src="Product/Tablet_cases.webp" height="100" width="auto" class="prod_img">
-                    </td>
-                    <td>
-                        <img src="Product/Home_Decor.webp" height="100" width="auto" class="prod_img">
-                    </td>
-                    <td>
-                        <img src="Product/Lava.webp" height="100" width="auto" class="prod_img">
-                    </td>
-                    <td>
-                        <img src="Product/Lava.webp" height="100" width="auto" class="prod_img">
-                    </td>
-                </tr>
+        </div>
+    </div>
+      
 
-                <tr>
-                    <td>                         
+
+
+    <div class="prod_div col-12 row">
+        <div class="container-fluid col-10 bg-white mb-5">
+            <div class="product-box">
+                <span class="product_Desc"> Books or Music Instruments
+                    <button class="btn btn-primary float-right p-3" style="font-size: small;"> VIEW ALL </button></span>
+                <h6 class="text-secondary "> Shop now !</h6>
+            </div>
+            <hr>
+            <div class="instru_div"> 
+                <div class="text-center row">
+                    <div class="deals_div">
+                        <img src="Product/Harmoniums.jpg" height="150" width="auto" class="prod_img">
                         <h4>Harmoniums</h4>
                         <h5> Upto 60% off</h5>
                         <p> Shop Now! </p>
-                     </td>
-                    <td> 
+                    </div>
+                    <div class="deals_div">
+                        <img src="Product/Flutes.jpg" height="150" width="auto" class="prod_img">
                         <h4>Flutes</h4>
                         <h5> Upto 80% off</h5>
                         <p> Shop Now! </p>
-                    </td>
-                    <td>         
+                    </div>
+                    <div class="deals_div"> 
+                        <img src="Product/Acoustic_Guitars1.jpg" height="150" width="auto" class="prod_img">
                         <h4>Acoustic Guitars</h4>
                         <h5> Start ₹1799</h5>
                         <p> Juarez, Revel </p>
-                    </td>
-                    <td>    
+                    </div>
+                    <div class="deals_div">
+                        <img src="Product/Musical_Accessories.jpg" height="150" width="auto" class="prod_img">
                         <h4>Musical Accessories</h4>
                         <h5> Upto 80% off</h5>
-                        <p> Shop Now!</p> 
-                    </td>
-                    <td>            
+                        <p> Shop Now!</p>
+                    </div>
+                    <div class="deals_div">
+                        <img src="Product/Microphone_Accessories.jpg" height="150" width="auto" class="prod_img">
                         <h4>Microphone Accessories</h4>
                         <h5> Upto 80% off</h5>
-                        <p> Shop Now!</p> 
-                    </td>
-                    <td>         
+                        <p> Shop Now!</p>
+                    </div>
+                    <div class="deals_div">
+                        <img src="Product/Acoustic_Guitars1.jpg" height="150" width="auto" class="prod_img">
                         <h4>Acoustic Guitars</h4>
-                        <h5> Startting ₹1999</h5>
-                        <p> By Revel </p>
-                    </td>
-                </tr>
-            </table>
+                        <h5> Starting ₹1999</h5>
+                        <p> By Revel</p>
+                    </div>
+                </div>
+            </div>
         </div>
         </div>
-
-
-
-
     </div>
-
-    
-
 </body>
 
 </html>
