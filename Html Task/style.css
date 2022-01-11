@@ -1,54 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    /* font-family:sans-serif; */
+}
+/* ::-webkit-scrollbar {
+    width: 10px;
+   }
+    
+   ::-webkit-scrollbar-track {
+    background-color: rgb(230, 230, 230);
+    
+   }
+   ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 50px; 
+   } */
+.btn:hover{
+    box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.2);
+}
+.prod_img:hover{
+    padding: 6px;
+}
+
+    /* NAV  */
+.nav_img{
+    cursor: pointer;
+}
+
 .nav-div{
     display: flex;  
     justify-content: center;
     align-content: center;
-}   
+}  
+.nav_input {
+}
 .input_div{
-    padding: 0 16px;
     border-radius: 2px 0 0 2px;
-    outline: none;
-    border: none;
     height: 38px;
     width: 450px;
-    margin-left: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     font-size: 15px;
-    position: relative;
-    margin-top: 8px;
     outline: none;
     transition: 0.5s ease-in-out;
-    
 }
 .btn-Search{
+    margin-top: 1px;
     height: 38px;
-    width: 38px;
+    width: 39px;
     color: #2874f0;
     border: none;
     cursor: pointer;
     outline: 0 !important;
     position: absolute;
-    margin-top: 8px;
     font-size: 18px;
-    align-items: center;
-    z-index: 10;
 }
 
-
-
-.nav-btn{
-    padding: 10px;
-}
-.btn_login{
-    margin-left: 50px;
-}
 .btn_nav{
-    margin-top: 15px;
+    transition: box-shadow 0.7s;
+    margin-right: 10px;
     padding: auto;
     position: relative;
-    padding: 0px 50px;
+    padding: 3px 35px;
     font-weight: bold;
-
     outline: 0 !important;
+    font-size:medium;
 }
 input{
     margin-left: 10px;
@@ -62,36 +82,79 @@ input[type="text"]{
     border: none;
 }
 
-
-
-
-
 .Search{
     outline: none;  
     background-color: #fff;
     color: #fff;
     width: 30px;    
     cursor: pointer;
-    margin-right: 7%;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 13px 8px;
+    width: 200px;
+    border-bottom: 1px solid rgb(235, 232, 232);
+    font-size: small;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Category */
+
 .Category{
-    text-align: center;
-    padding: 0 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 2px 1px grey;
 }
 .cate_img{
-    height: 60%;
+    height: 20%;
     width: 60%;
+    padding: 0px 10px;
 }
 .categories_txt{
-    font-weight: bolder;
+    font-weight: bold;
     font-size: small;
+    padding-bottom: 5px;
+}
+.cate_div{
+    cursor: pointer;
+}
+.cate_div:hover{
+    color:rgb(0, 63, 235);
+
 }
 
 
+    /* Deals Of the Day  */
 
-.prod{
-    margin-bottom: 10px;
+.main_Div{
+    display: flex;
+    margin-left: 8%;
 }
+.prod_div{
+    padding: 10px;
+    /* overflow-y: auto;
+ overscroll-behavior-x: contain;
+ scroll-snap-type: x mandatory; */
+ 
+}   
 
 .product-box{
     margin-top: 10px;
@@ -118,41 +181,20 @@ h4{
 h5{
     color: rgb(43, 145, 43);
 }
-
+.slider_btn{
+    margin: 100% 5px;
+    padding: 40px 12px;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(27, 27, 27);	
+    box-shadow: -3px 0px 3px gray;
+    border: none;
+    height: 50%;
+    border-radius: 5px 0px 0px 5px;
+    outline: none !important;
+}
   
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 13px 8px;
-    width: 200px;
-    border-bottom: 1px solid rgb(235, 232, 232);
-    font-size: small;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
- .prod_div{
-     display: flex;
-     justify-content: center;
-     align-content: center;
- }
-
-
  /* .offer_div{
     justify-content: space-between;
  } */
@@ -172,6 +214,7 @@ h5{
  .prod_img{
     padding: 10px;
     margin: 0 30px;
+    transition: padding 0.2s;
  }
 
 
